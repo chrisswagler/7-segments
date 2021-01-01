@@ -1,4 +1,4 @@
-//Christopher Swagler 001328396
+//Christopher Swagler
 
 #include "DE1SoCfpga.h"
 #include "SevenSegment.h"
@@ -6,7 +6,6 @@
 
 int main()
 {
-	// ************** Put your code here **********************
 	//initialize buttonstate variable to store what button was pressed
 	int buttonstate;
 	//create LEDControl and SevenSegment object
