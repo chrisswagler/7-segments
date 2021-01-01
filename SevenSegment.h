@@ -1,4 +1,4 @@
-//Christopher Swagler 001328396
+//Christopher Swagler
 
 const unsigned int bit_values[16] = {63,6,91,79,102,109,125,7,127,111,119,124,57,94,121,113};
 
