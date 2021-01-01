@@ -1,4 +1,4 @@
-//Christopher Swagler 001328396
+//Christopher Swagler
 #include "DE1SoCfpga.h"
 #include "LEDControl.h"
 
@@ -36,7 +36,7 @@ void LEDControl::WriteAllLeds(int value) {
   RegisterWrite(LEDR_BASE, leds_regValue);
 }
 
-  int LEDControl::Read1Switch(int switchNum) {
+int LEDControl::Read1Switch(int switchNum) {
   //create variable to store current state of switches
   int switchval;
   switchval = ReadAllSwitches();
@@ -46,7 +46,7 @@ void LEDControl::WriteAllLeds(int value) {
   return (switchval % 2);
 }
 
-  int LEDControl::ReadAllSwitches() {
+int LEDControl::ReadAllSwitches() {
   //create variable to store RegisterRead return value with switches offset
   int switchesvalue;
   switchesvalue = RegisterRead(SW_BASE);
@@ -57,7 +57,7 @@ void LEDControl::WriteAllLeds(int value) {
   return switchesvalue;
 }
 
-  int LEDControl::PushButtonGet() {
+int LEDControl::PushButtonGet() {
   //read the value from the buttons
   int buttonval = RegisterRead(KEY_BASE);
     switch (buttonval) {
