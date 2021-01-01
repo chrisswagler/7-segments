@@ -1,4 +1,4 @@
-//Christopher Swagler 001328396
+//Christopher Swagler
 
 class LEDControl : public DE1SoCfpga {
 private:
