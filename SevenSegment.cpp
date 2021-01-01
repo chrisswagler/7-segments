@@ -1,4 +1,4 @@
-//Christopher Swagler 001328396
+//Christopher Swagler
 #include "DE1SoCfpga.h"
 #include "SevenSegment.h"
 
